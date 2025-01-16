@@ -27,6 +27,15 @@ public class FileReadingDemo {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        Integer x = 10;
+        int y =20;
+
+        String text = String.format( """
+                Hi this%d is Random
+                    %s   Text""",x,y);
+
+        System.out.println(text);
+        System.out.println("%s  %d".formatted("Rishan",101));
 
         // String filePath = "path/to/your/file.txt";
 
